@@ -1,0 +1,175 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+  padding: 5em 0;
+  background: whitesmoke;
+}
+
+.separador {
+  border-bottom: 1px lightgray solid;
+  margin-bottom: 3em;
+}
+
+.separador h1 {
+  font-size: 28px;
+  margin: 0;
+  padding: 0 0 .5em 0;
+}
+
+/* #################### */
+/* CONTENEDOR FUNDADORES */
+/* #################### */
+
+.contenedor-fundadores {
+  background: white;
+  width: 100%;
+}
+
+.contenedor-fundadores .lista-fundadores {
+  width: 100%;
+}
+
+.contenedor-fundadores .lista-fundadores .item-fundadores {
+  border: 1px transparent solid;
+  z-index: 10;
+}
+
+.contenedor-fundadores .lista-fundadores .item-fundadores:hover {
+  border-color: lightgray;
+  box-shadow: 0 0 .5em .25em rgba(200,200,200,.35);
+  z-index: 11;
+}
+
+.contenedor-fundadores .lista-fundadores .item-fundadores p {
+  margin: .5em 0;
+  text-align: center;
+}
+
+.contenedor-fundadores .lista-fundadores .item-fundadores .bandera > img {
+  width: 25%;
+}
+
+.contenedor-fundadores .lista-fundadores .item-fundadores .foto-fundador {
+  background-image: url(/img/foto.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.contenedor-fundadores .lista-fundadores .item-fundadores h3 {
+  font-size: 18px;
+  margin: .5em 0;
+  padding: 0 .5em;
+  text-align: center;
+}
+
+.contenedor-fundadores .lista-fundadores .item-fundadores h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: .5em 0;
+  padding: 0 .5em;
+  text-align: center;
+}
+
+/* #################### */
+/* CONTENEDOR CARRUSEL */
+/* #################### */
+
+.carrusel-fundadores {
+  background: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrusel-fundadores .lista-fundadores {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores {
+  border: 1px transparent solid;
+  z-index: 10;
+  width: 12.5%;
+  display: flex;
+  overflow: hidden;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores:hover {
+  border-color: lightgray;
+  box-shadow: 0 0 .5em .25em rgba(200,200,200,.35);
+  z-index: 11;
+  cursor: pointer;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores .item-info {
+  width: 100%;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores .item-info p {
+  margin: .5em 0;
+  text-align: center;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores .item-info .bandera > img {
+  width: 25%;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores .item-info .foto-fundador {
+  background-image: url(/img/foto.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores .item-info h3 {
+  font-size: 18px;
+  margin: .5em 0;
+  padding: 0 .5em;
+  text-align: center;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores .item-info h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: .5em 0;
+  padding: 0 .5em;
+  text-align: center;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores .item-texto {
+  width: 0;
+  display: none;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores.inactivo {
+  width: 6%;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores.activo {
+  width: 58%;
+  transition: all 1s ease;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores.activo:hover {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores.activo .item-info {
+  width: 20%;
+  border: 1px lightgray solid;
+  border-right: none;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores.activo .item-texto {
+  width: 75%;
+  display: block;
+  padding: 1em 3em;
+  border: 1px lightgray solid;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-left: none;
+}
