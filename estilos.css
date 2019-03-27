@@ -55,6 +55,11 @@ body {
   background-size: cover;
   height: 300px;
   width: 100%;
+  filter: grayscale(100%);
+}
+
+.contenedor-fundadores .lista-fundadores .item-fundadores .foto-fundador:hover {
+  filter: none;
 }
 
 .contenedor-fundadores .lista-fundadores .item-fundadores h3 {
@@ -122,6 +127,11 @@ body {
   background-size: cover;
   height: 400px;
   width: 100%;
+  filter: grayscale(100%);
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores .item-info .foto-fundador:hover {
+  filter: none;
 }
 
 .carrusel-fundadores .lista-fundadores .item-fundadores .item-info h3 {
@@ -151,6 +161,10 @@ body {
 .carrusel-fundadores .lista-fundadores .item-fundadores.activo {
   width: 58%;
   transition: all 1s ease;
+}
+
+.carrusel-fundadores .lista-fundadores .item-fundadores.activo .item-info .foto-fundador {
+  filter: none;
 }
 
 .carrusel-fundadores .lista-fundadores .item-fundadores.activo:hover {
